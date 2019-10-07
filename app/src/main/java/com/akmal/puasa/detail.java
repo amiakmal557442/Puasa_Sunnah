@@ -16,6 +16,7 @@ public class detail extends AppCompatActivity {
         webView = findViewById(R.id.webview);
         Intent detail = getIntent();
         detail.getIntExtra("posisi",0);
+                getSupportActionBar().setDisplayShowHomeEnabled(true);
         String link = detail.getStringExtra("link");
 
         webView.getSettings().setJavaScriptEnabled(true);
